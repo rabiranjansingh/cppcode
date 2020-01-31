@@ -1,0 +1,42 @@
+
+*****************************************************************
+//std::getline   consume input with white space data 
+ for example 
+
+  std::string name;
+  std::getlin(std::cin,name)
+
+******************************************************************
+auto in c++
+auto has a different meaning in C++11 than it did before. In earlier standards, auto was a storage specifier for
+automatic storage duration - the typical storage an object has where it is destroyed at the end of its scope. 
+In C++11, the auto keyword is used for type deduction of variables. The type of the variable is deduced from the expression
+being used to initialise it, much in the same way template parameters may be deduced from the types of a template function's arguments.
+
+This type deduction is useful when typing out ugly long types has no benefit. Often, 
+the type is obvious from the initialiser. It is also useful for variables whose type might
+depend on which instantiation of a template it appears in.
+
+Type inference or deduction refers to the automatic detection of the data type of an expression in a programming language.
+It is a feature present in some strongly statically typed languages. In C++, the auto keyword(added in C++ 11)
+is used for automatic type deduction. For example, you want to create an iterator to iterate over a vector, 
+you can simply use auto for that purpose. 
+
+Example
+#include<iostream>
+#include<vector>
+using namespace std;
+int main() {
+   vector<int> arr(10);
+   
+   for(auto it = arr.begin(); it != arr.end(); it ++) {
+      cin >> *it;
+   }
+   return 0;
+}
+
+*********************************************
+http://www.cppforschool.com/assignment/filetext_1.html
+
+
+
