@@ -32,3 +32,11 @@ void ChangeValues(int y)
 
 	return;
 }
+
+
+/*
+ Before call, x = 5
+ In ChangeValues, Y = 5
+ In ChangeValues, Y = 20
+ Back in main x = 5
+ */
