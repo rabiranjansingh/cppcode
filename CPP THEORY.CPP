@@ -100,6 +100,11 @@ class Student {
   int getEmp_id() const {
     return emp_id;
   }
+/*both setEmp_id  work fine 	
+void setEmp_id(const int &x) {
+    emp_id = std::move(x);
+  }  */
+	
   void setEmp_id(int x) {
     emp_id = std::move(x);
   }
