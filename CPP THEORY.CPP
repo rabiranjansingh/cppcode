@@ -75,5 +75,52 @@ int main() {
 	return 0;
 }
 
+//c++ class and getter setter 
+#include <iostream>
+using namespace std;
+class Student {
 
+  private:
+    int id;
+  string name;
+  int emp_id;
+
+  public:
+    Student() {
+
+    }
+  Student(int _id, string _name): id(_id), name(_name) {}
+  int getId() const {
+    return id;
+  }
+  string getName() const {
+    return name;
+  }
+
+  int getEmp_id() const {
+    return emp_id;
+  }
+  void setEmp_id(int x) {
+    emp_id = std::move(x);
+  }
+
+};
+int main() {
+
+  Student s(1301227122, "rabiranjan");
+  cout << s.getId() << endl;;
+  cout << s.getName() << endl;
+
+  Student ss;
+  ss.setEmp_id(1455);
+  cout << ss.getEmp_id() << endl;
+
+	
+	 /*
+	        1301227122
+		rabiranjan
+		1455
+	*/
+  return 0;
+}
 
