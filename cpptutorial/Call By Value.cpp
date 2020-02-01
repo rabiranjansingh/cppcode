@@ -1,16 +1,11 @@
 #include<iostream>
 #include<fstream>
 
-/* Both Java and C++ invoke functions using a mechanism called ìCall By Valueî. If we pass a variable to a
+/* Both Java and C++ invoke functions using a mechanism called ‚ÄúCall By Value‚Äù. If we pass a variable to a
 function then the function gets the value contained in the variable. However, any changes that are
 made to the variable in the function are not reflected back in the calling program. These parameters are
 considered local variables. To illustrate, consider the following:
 */
-
-
-
-
-
 
 using namespace std;
 void ChangeValues(int y); // Prototype
